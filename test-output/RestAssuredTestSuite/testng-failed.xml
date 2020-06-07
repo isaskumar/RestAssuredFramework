@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [RestAssuredTestSuite]">
+  <listeners>
+    <listener class-name="com.api.qa.utils.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="RestTest(failed)">
+    <classes>
+      <class name="com.api.qa.test.TC002_GET_Single_Employee">
+        <methods>
+          <include name="getAllEmployees"/>
+          <include name="tearDown"/>
+          <include name="validateResponseBody"/>
+          <include name="validateStatusCode"/>
+          <include name="setup"/>
+          <include name="validateStatusLine"/>
+        </methods>
+      </class> <!-- com.api.qa.test.TC002_GET_Single_Employee -->
+      <class name="com.api.qa.test.TC005_Delete_Employee">
+        <methods>
+          <include name="tearDown"/>
+          <include name="deleteEmployee"/>
+          <include name="validateResponseBody"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.api.qa.test.TC005_Delete_Employee -->
+      <class name="com.api.qa.test.TC004_PUT_Update_Employee">
+        <methods>
+          <include name="validateResponseBody"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="createEmployee"/>
+        </methods>
+      </class> <!-- com.api.qa.test.TC004_PUT_Update_Employee -->
+    </classes>
+  </test> <!-- RestTest(failed) -->
+</suite> <!-- Failed suite [RestAssuredTestSuite] -->

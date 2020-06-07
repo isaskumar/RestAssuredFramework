@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="RestAssuredTestSuite">
+<listeners>
+<listener class-name="com.api.qa.utils.Listeners"/>
+</listeners>
+  <test name="RestTest">
+    <classes>
+      <class name="com.api.qa.test.TC002_GET_Single_Employee"/>
+      <class name="com.api.qa.test.TC005_Delete_Employee"/>
+      <class name="com.api.qa.test.TC003_POST_Create_Employee"/>
+      <class name="com.api.qa.test.TC001_Get_All_Employees"/>
+      <class name="com.api.qa.test.TC004_PUT_Update_Employee"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
